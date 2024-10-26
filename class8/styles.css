@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#parent_container{
+    /* position: relative;
+    width: 500px;
+    height: 400px;
+    border: 2px solid blue; */
+}
+
+#business_hours{
+    margin: 30px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid brown;
+    padding: 10px;
+    width: 700px;
+    position: sticky;
+    top: 0;
+    left: 200px;
+    bottom: 50px;
+    /* left: 100px; */
+    background-color: rgb(218, 133, 22);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#social_media{
+    display: inline-flex;
+    padding: 10px;
+    background-color: cornflowerblue;
+    border: 2px solid red;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    align-items: center;
+    
+}
+
+#social_media > img {
+    width: 20px;
+}
+
+#lorem_p{
+    width: 300px;
+    height: auto;
+}
+
+
+.animation_div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: myAnimation 5s linear 1s infinite alternate; 
+    /*Shorthand for animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction --> normal, alternate, alternate-reverse, reverse*/
+}
+
+/* TO APPLY ANIMATION, MAKE USE OF THE KEYWORD @keyframes*/
+
+@keyframes myAnimation {
+    0% {
+        background-color: red;
+        top: 0;
+        bottom: 0;
+    }
+    25%{
+        background-color: aqua;
+        top: 0;
+        left: 200px;
+    }
+    50%{
+        background-color: rgb(42, 46, 165);
+        top: 200px;
+        left: 200px;
+    }
+    75%{
+        background-color: rgb(226, 241, 59);
+        top: 200px;
+        left: 0px;
+    }
+    100%{
+        background-color: black;
+        left: 0;
+        top: 0;
+    }
+}
+
+@media (max-width: 768px){
+    #social_media{
+          top: 0px;
+    left: 400px;
+    }
+}
+/*CSS POSITIONING
+position: static, relative, absolute, fixed, sticky;
+Direction or navigation styles ----> top, bottom, left, right
+
+By default, all elements have position: static
+
+Position: relative makes the element to be positioned relative to its current position
+
+Position: fixed does not leave any gap, it is positioned relative to the viewport, scrolling doesn't affect it
+
+Position: absolute will scroll with the page; it doesn't leave any gap on the webpage
+
+Will position the element relative to its closest positioned ancestor else it will position itself relative to the document
+*/
+
+
+.shadow_box{
+    width: 420px;
+    height: 300px;
+    border: 2px solid brown;
+    border-radius: 20px;
+    box-shadow: 8px 8px green;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+

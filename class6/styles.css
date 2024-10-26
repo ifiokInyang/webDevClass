@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.media_p{
+    font-size: 60px;
+    background-color: brown;
+    color: white
+}
+
+/*
+To apply the flexbox property, you need to make the parent container to display:flex
+*/
+#flex_container{
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*Justify-content positions the flex items from left to right; space-between, space-around, space-evenly, center, flex-start, flex-end*/
+    justify-content: space-evenly;
+    /*Align-items positions the flex items from top to bottom */
+    align-items: center;
+}
+
+
+#flex_container > div {
+    border: 2px solid brown;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    width: 350px;
+    height: 400px;
+}
+
+
+#grid_container{
+    /* width: 700px; */
+    display: grid;
+    /*
+    With grid-template-columns, you are able to define the number of columns and their sizes 
+    */
+    /* grid-template-columns: auto auto auto auto; */
+
+    /* This line of code makes the grid items responsive */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    /* grid-template-columns: repeat(2, 1fr) repeat(2, 2fr);  */
+    /*fr stands for fraction */
+    /* grid-template-columns: repeat(3, 200px); */
+    /* column-gap: 50px;
+    row-gap: 150px; */
+    gap: 150px 50px;
+    
+}
+
+#grid_item1{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#grid_container > div{
+    /* gap: 40px; */
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .media_p{
+        font-size: 30px;
+        background-color: black;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .media_p{
+        font-size: 45px;
+        background-color: blue;
+    }
+}

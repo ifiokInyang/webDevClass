@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Class 2</title>
+
+    <style>
+
+        /*Element selector */
+        p{
+            background-color: black;
+            color: white;
+        }
+
+        /*ID SELECTOR */
+
+        #heading4{
+            text-align: center;
+            /* font-size: 16px; */
+        }
+
+        .heading_four{
+            text-align: start;
+            font-size: 50px;
+        }
+
+        /* CLASS SELECTOR */
+        .class_heading{
+            letter-spacing: 5px;
+        }
+
+    
+        /*UNIVERSAL SELECTOR*/
+        *{
+            /* font-family: 'Segoe UI', 'Arial', 'Calibri', sans-serif; */
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            box-sizing: border-box;
+            /* background-color: chocolate; */
+        }
+
+        /*ATTRIBUTE SELECTOR*/
+
+        input[type="number"]{
+            padding: 50px;
+            border: 2px solid brown
+        }
+
+        /*CSS Group Selectors*/
+        h1, h2, input, p {
+            font-size: 50px;
+        }
+
+        /*CHILD SELECTOR */
+
+        ol > li{
+            text-decoration: underline
+        }
+
+        /*SPECIFICITY */
+        /*Specificity determines the order of priority for applying styles*/
+
+        /* 1) High*/
+
+        /*
+        =========Inline Styling=========
+        */
+
+        /* 2) Medium*/
+
+        /*
+        IDs
+        */
+        /* 3) Normal*/
+
+        /*
+        Classes, pseudo-classes, attribute selectors
+        */
+
+        /* 4) Low*/
+
+        /*
+        Elements, Pseudo-elements
+        */
+
+        /*PSEUDO CLASS   like :hover, :visited, :checked, :focus*/
+        #second_paragraph:hover {
+            background-color: chartreuse;
+        }
+
+        input:focus{
+            border: 4px solid yellow;
+        }
+
+        /*PSEUDO ELEMENTS like ::before, ::after, ::first-letter*/
+        li::before{
+            content: "A typical country in Africa is: ";
+            color: blue;
+        }
+
+        #second_paragraph::after{
+            content: ", this is a new content.";
+            background-color: crimson;
+        }
+
+        #box_model{
+            width: 200px;
+            height: 200px;
+            border: 5px solid gray;
+            padding: 50px;
+            margin: 50px;
+        }
+        /*
+        True width: The width plus padding left plus padding right plus border left plus border right;
+        200px + 50px + 50px + 5px + 5px = 310px
+        */
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--INLINE STYLING-->
+    <!--STYLING WITH THE STYLE TAG WITHIN THE HEAD TAG-->
+    <!--STYLING USING AN EXTERNAL STYLESHEET-->
+
+    <ol id="list">
+        <li id="list-item1">Nig<span style="color: chocolate">eria</span></li>
+        <li id="list-item2">Kenya</li>
+        <li id="list-item3">Cameroon</li>
+        <li id="list-item4">Cote D'Ivoire</li>
+    </ol>
+
+
+    <div>
+
+        <!--INLINE STYLING-->
+        <p style="color: brown; font-size: 30px; text-transform: uppercase; background-color: blueviolet;">
+            This is a paragraph
+        </p>
+        <p id="second_paragraph">This is a second paragraph</p>
+
+        <h4 id="heading4" class="heading_four">This heading demonstrates ID styling</h4>
+
+        <h5 class="class_heading">This is a heading that demonstrates the Class styling</h5>
+
+        <input type="text" />
+        <input type="number" />
+        <input type="password" />
+    </div>
+
+    <!--DIFFERENCE BTW AN ID AND A CLASS: ids must be unique across your HTML page
+    While classes can have a repitition
+    -->
+    <!--BOX MODEL AND LAYOUT-->
+
+    <div id="box_model">
+        This is my content
+    </div>
+
+</body>
+
+</html>

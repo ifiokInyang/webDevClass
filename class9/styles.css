@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 80px;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid grey;
+    background-color: white;
+}
+
+#logo{
+    width: 150px;
+}
+
+#enroll_btn{
+    background-color: #34A853;
+    padding: 15px 25px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+#tech_training{
+    color: white;
+    background-color: #12B76A;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+#heading_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 450px;
+    /* background-color: lightblue; */
+    margin: 50px;
+}
+
+#heading_container > h2 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 0.5;
+}
+
+#tech_training{
+    background-color: #12B76A;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.img_container{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#one_thousand{
+    color: #12B76A;
+}
+
+.img_text_container{
+    display: flex;
+    padding: 70px;
+    background-color: #e4f9f0;
+    justify-content: space-between;
+    margin: 50px 0px;
+}
+
+#text_container{
+    /* width: 520px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+}
+.img_container{
+    flex: 1
+}
+
+#text_container > h2 {
+    font-size: 34px;
+}
+
+#text_container > p{
+    letter-spacing: 1.2px;
+}
+
+.doubleg_container{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#decagon_doubleg_container{
+    display: flex;
+    height: max-content;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: bisque; */
+    margin: 20px;
+}
+
+#decagon_doubleg_container > p{
+    font-size: 30px;
+    padding: 10px 5px;
+    font-weight: 800;
+}
+
+.doubleg_bold_paragraph{
+    width: 78vw;
+    padding: 0px 50px;
+    text-align: center;
+}
+
+#doubleg_p2{
+    text-align: center;
+    font-size: 18px;
+    width: 78vw;
+    padding: 20px 50px;
+    color: #5C6881;
+}
+
+#gateway_container{
+    display: flex;
+    height: auto;
+    /* background-color: beige; */
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 0px 90px;
+}
+
+#gateway_container > div {
+    /* flex: 1; */
+    width: 500px;
+    background-color: #F2F4F7;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.gateway1, .gateway2{
+    width: max-content;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: 700;
+    color: white;
+}
+.gateway2{
+    background-color: #34A853;
+}
+
+.gateway1{
+    background-color: black;
+}
+
+#intensive_heading{
+    color: #34A853;
+}
+
+#gateway1_img{
+    border-radius: 20px;
+}
+
+.software_container{
+    width: max-content;
+    /* background-color: antiquewhite; */
+    height: 600px;
+    /* box-shadow: 2px 2px 0px grey; */
+    border: 1px solid rgb(218, 216, 216);
+    border-radius: 5px;
+}
+#software_eng{
+    position: relative;
+
+}
+
+#software_eng > h2{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 40%;
+    color: white;
+}
+
+#software_eng > p {
+    position: absolute;
+    top: 50px;
+    color: white;
+    left: 20px;
+}
+
+#software_eng4{
+    background: url("https://decagon.institute/_next/static/media/fullstack-dev.031f42c2.png");
+    /* background-size: ; */
+    width: 430px;
+    height: 180px;
+}
+
+#software_eng4 > h2, #software_eng4 > p{
+    color: white;
+}
+
+#start_price{
+    text-align: center;
+}
+
+#software_text_container{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+#amount{
+    color: #34A853;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.training_section_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 12px 50px;
+}
+
+.training_section_container > div{
+    margin-bottom: 20px;
+}
+.program_starts{
+    height: 50%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.reg_btn{
+    /* font-size: 40px; */
+    /* text-align: center; */
+    margin-left: 60px;
+}
+
+.training_element{
+    text-align: center;
+}
+
+#training_container{
+    margin-top: 150px;
+}
+
+#training_container > h1 {
+    padding-bottom: 15px;
+    font-size: 45px;
+}

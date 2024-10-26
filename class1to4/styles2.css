@@ -1,0 +1,103 @@
+body{
+    background-color: lightblue;
+    font-size: 20px;
+}
+
+
+
+.flex_container{
+    display: flex; /*To apply flex styling, Make the parent display flex*/
+    width: 100vw;
+    height: 100vh;
+    background-color: burlywood;
+    flex-direction: row; /*flex direction is row by default; there is row-reverse, column-reverse*/
+    flex-wrap: wrap;
+    justify-content: center; /*Justify content will justify your content from left to right*/
+    align-items: center;
+}
+
+.flex_container > div {
+    width: 75px;
+    height: 75px;
+    background-color: cornflowerblue;
+    /* padding: 5px; */
+    margin: 55px;
+}
+
+/* @media (min-width: 320px) and (max-width: 768px){
+    .flex_container{
+        width: 320px;
+    }
+} */
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* From 0px of width to 768px of screen width, you want the defined styles to apply*/
+/* @media screen and (max-width: 768px){
+    body{
+        background-color: green;
+        font-size: 14px;
+    }
+} */
+
+/* @media (max-width: 1024px){
+    body{
+        background-color: rgb(236, 237, 227)
+    }
+} */
+
+/* From 769px of width to 1024px of screen width, you want the defined styles to apply*/
+
+/* @media (min-width: 769px ) and (max-width: 1024px) {
+    body{
+        background-color: red;
+        font-size: 28px;
+    }
+} */
+
+/* From 1024px of width and greater, you want the defined styles to apply*/
+/* @media (min-width: 1024px) and (max-width: 1500px){
+    body{
+        background-color: blueviolet;
+        font-size: 44px;
+    }
+} */
+
+
+.container {
+    display: flex;
+}
+
+.grid_container{
+    /* width: 500px; */
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr) repeat(2,2fr); */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-columns: repeat(2, 100px 200px); */
+    background-color: bisque;
+    padding: 12px;
+    gap: 20px;
+    /* grid-template-rows: repeat(3, 100px 200px); */
+}
+
+.grid_item{
+    background-color: darkcyan;
+    border: 2px solid gray;
+    /* display: flex;
+    flex-direction: column; */
+}
+.grid_item3{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: brown;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    /* grid-column: 1/3 */
+    /* grid-row: 1/3; */
+    
+}

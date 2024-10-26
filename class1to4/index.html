@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<!--Tells the browser that it is a HTML document to open (parse)-->
+<html lang="en">
+  <!--Html root-->
+  <head>
+    <!--Opening Head Tag-->
+    <meta charset="UTF-8" />
+    <!--Meta data-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./html logo.png" />
+
+    <!--Tells your browser to take  the viewport as the default display-->
+    <title>Web dev class 1</title>
+
+    <style>
+
+      /*h1 is an element selector*/
+      /*h2 is an element selector*/
+      /*ul is an element selector*/
+      /*p is an element selector*/
+
+
+    /* CSS Group Selector */
+      h1,h2,h3,span,p {
+        color: blue;
+      }
+      /*Ids are styled with an # while classes are styled with a dot*/
+      
+      /*If we have same styling for the Id and Class, the styling for the id
+      will apply
+      */
+
+    
+      #paragraph{
+        font-size: 48px;
+        background-color: cadetblue;
+        color: red;
+      }
+
+      /* Class */
+      .paragraph{
+        font-size: 60px;
+        background-color: red;
+        border: 4px solid grey;
+      }
+
+      #car_ulcontainer{
+        background-color: blueviolet;
+        border: 2px solid brown;
+      }
+
+      /* .car {
+        color: yellow;
+      } */
+
+      /*Child Selector*/
+
+      ul#phone_accessories > li{
+        color: green;
+      }
+
+      ul#car_ulcontainer > li {
+        color: yellow;
+      }
+
+    </style>
+  </head>
+  <!--Closing head tag-->
+  <body>
+    <!--Opening Body Tag-->
+    Hello world, this is my first code
+
+<ul id="phone_accessories">
+  <li>
+    headset
+  </li>
+  <li>
+    Charger
+  </li>
+  <li>pouch</li>
+  <li>screen guard</li>
+</ul>
+
+
+    <!--TAGS-->
+
+    <!--Self closing tags are closed within a single tag-->
+    <input />
+    <img />
+    <br />
+    <hr />
+    <link />
+    <meta />
+
+    <!--Non-self closing tags-->
+
+    <p><!--Opening tag--></p>
+    <!--Closing tag-->
+
+    <h1></h1>
+    <title></title>
+    <section></section>
+    <h2></h2>
+    <aside></aside>
+
+    <!--COMMENTS-->
+
+    <!--This is a single line comment-->
+
+    <!-- This is a Multi-line comment -->
+    <!--
+Comment
+Another
+Line
+-->
+
+    <!--ELEMENTS is made up of opening tag, a content, and a closing tag-->
+
+    <p id="paragraph" class="paragraph" style="font-size: 12px;">This is a paragraph</p>
+    <h1 class="paragraph">This is heading 1</h1>
+    <h2 class="paragraph">This is heading 2</h2>
+    <h3 class="paragraph">This is heading 3</h3>
+    <h4 class="paragraph">This is heading 4</h4>
+    <h5 id="heading">This is heading 5</h5>
+    <h6>This is heading 6</h6>
+
+    <!--ATTRIBUTES contain properties of elements and are written in  opening tags after  the name of the tag-->
+
+    <a href="https://www.google.com" target="_blank" class="" id=""
+      >This is an anchor element</a
+    >
+
+    <a href="#">This is a void url</a>
+
+    <img src="./html logo.png" alt="a html logo" title="a html logo/icon" width="100px"/>
+
+    <!--EMBEDDING A YOUTUBE VIDEO-->
+<iframe width="860" height="315" src="https://www.youtube.com/embed/XSHM3q62jqU?si=VSMf4M7ilZfFxj4S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<!-- <iframe width="860" height="400" src="https://www.pexels.com/video/schwan-27922277/" title="two ducks swimming in water" autoplay; picture-in-picture; referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+    <!--WORKING WITH MULTIMEDIA-->
+
+    <audio controls autoplay loop muted>
+      <source src="./music.mp3" type="audio/mp3"/>
+      This audio file is not supported by your browser.
+    </audio>
+
+   <!-- <video controls autoplay loop muted width="300px" height="200px"> -->
+    <video autoplay loop muted width="300px" height="200px">
+      <source src="./video1.mp4" type="video/mp4"/>
+      This video file is not supported by your browser
+    </video>
+
+    <!--EMBEDDING A YOUTUBE VIDEO-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DeKaVzTEQa8?si=V2Plvbk1GVs3dYp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    <!--TEXT FORMATTING-->
+
+    <blockquote style="color: darkblue;">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cum ex eius quam nesciunt optio minima repellat odio harum quas. Soluta odit eius nam asperiores quas, optio quibusdam quasi, maiores molestiae sit consectetur tempore reiciendis, dolorum reprehenderit molestias atque odio voluptatum laboriosam autem similique qui ex placeat. Ea, dolore eius!
+    </blockquote>
+
+    <p>
+      Lorem ipsum dolor sit<b> <i> amet consectetur adipisicing elit.</i> </b> Omnis maiores
+      quas <u>repudiandae voluptas necessitatibus</u> culpa quibusdam molestiae,
+      officiis illo delectus X<sup>2</sup> possimus eveniet harum sapiente at eum laborum
+      incidunt nostrum <em><i>accusamus earum </i></em> sequi magni rem officia impedit
+      voluptate. <strong>Libero ducimus deleniti sequi </strong> expedita exercitationem beatae
+      voluptate nulla <em>sapiente nisi ex ea iure,</em> distinctio ratione, aspernatur
+      laudantium, CO<sub>2</sub> eos obcaecati id saepe consequatur mollitia tenetur totam
+      eligendi eum quasi. Sequi qui non itaque aliquid nobis, molestias debitis
+      facilis voluptatum <del> laboriosam officiis,</del> explicabo illum sunt quidem
+      corporis<span style="color: red; font-size: 20px"> tempora maxime aspernatur </span> alias accusantium corrupti sint ipsum!
+      Eius veniam tenetur perferendis, aperiam voluptatum dignissimos dolores
+      neque ducimus maxime voluptates. Repellendus, eligendi laudantium. Fugit
+      ducimus<blockquote style="color: brown;"> reiciendis, fuga sed maxime corrupti quis ratione eius quam minima </blockquote>
+      nam dicta esse vero unde voluptas mollitia rem? Eos magnam, similique
+      ducimus quisquam enim ut tempora, nobis voluptates quod unde vero ipsa.
+      Nisi alias corrupti eveniet itaque deserunt odit rem numquam, doloremque
+      autem voluptatibus illum exercitationem voluptatem ab repudiandae
+      suscipit! Beatae dicta ratione deleniti sed, cupiditate deserunt aut
+      tempora. Explicabo aliquid, in repudiandae incidunt aliquam corrupti minus
+      ad ratione vitae ab ducimus facilis rerum adipisci, magnam ullam, fuga
+      quidem deserunt totam beatae similique assumenda. Enim deserunt, quae
+      consectetur dicta distinctio ratione eum! 
+      For more information, <a href="https://www.w3schools.com" target="_blank">click here</a>
+    </p>
+
+    <!--INLINE VS BLOCK-LEVEL ELEMENTS-->
+    <!--Inline elements take the width of its content-->
+
+    <span style="background-color: blueviolet;">This is a span - an inline element</span>
+    <a style="background-color: red">This is an anchor - an inline element</a>
+    <input value="This is an input box - an inline element" style="background-color: beige;"/>
+
+    <!--Block level elements actually take the full width of its parent container-->
+    <div style="width: 200px">
+        <div style="background-color: brown; width: 100px">This is a div</div>
+    </div>
+    
+    <p style="background-color: chocolate; width: 150px">This is a paragraph</p>
+    <ul style="background-color: aquamarine;">This is an unordered list</ul>
+    <ol style="background-color: darkblue;">This is an ordered list</ol>
+
+    <!--HTML FORMS (Contact form)-->
+    <form action="/action_page.php" method="post" onsubmit="submitData">
+
+      <label for="firstName">First Name</label> <!--Camel Casing e.g fName, lastName, allowFullscreen-->
+      <input type="text" name="firstName" value="" placeholder="example: John" required/> <br/> <br /> <br /><!--tel, email, text, password, url, checkbox, radio, number, date-->
+
+      <label for="lastName">Last Name</label>
+      <input type="text" name="lastName" value="" placeholder="example: Doe"/> <br /><br /><br />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" value="" placeholder="example@yourmail.com" required/> <br />
+      <br /> <br />
+
+      <label for="street_no">Street Number</label>
+      <input type="number" name="street_no" value="" placeholder="35" min="1" max="10000"/> <br />
+      <br /><br />
+
+      <label for="password">Password</label>
+      <input type="password" name="password" value="" placeholder="set your password" />
+      <br /><br />
+
+      <label for="question1">Please tick all that apply</label> <br />
+      <input type="checkbox" name="question1" value=""/> Oranges are yellow <br />
+      <input type="checkbox" name="question2" value="" checked/> Oranges are green <br />
+      <input type="checkbox" name="question3" value="" /> Oranges are blue <br />
+
+
+      <label for="gender">Male</label>
+      <input type="radio" name="gender" value="male" id="1"/>
+      <br /><br />
+
+      <label for="female">Female</label>
+      <input type="radio" name="gender" value="female" id="2" />
+       <br /><br />
+
+      <label for="transgender">Transgender</label>
+      <input type="radio" name="gender" value="transgender" id="3" />
+       <br /><br />
+
+       <label for="birthday">Birthday</label>
+       <input type="date" name="birthday" value="" />
+
+     <br /><br />
+
+     <textarea cols="60" rows="0">
+      This is a text area
+     </textarea>
+
+      <input type="submit" value="Submit"/>
+    </form> <br/><br/>
+
+<!--The table tag is used to create tables-->
+    <table style="border: 1px solid black;"> <!--Parent container for the entire table-->
+        <tr> <!--Represents the table row-->
+          <th style="border: 4px solid blue;">   <!--Represents the table heading and also defines the rows-->
+              S/N
+          </th>
+          <th style="border: 4px solid blue;">
+            FRUITS
+          </th>
+          <th style="border: 4px solid blue;">
+            QUANTITY
+          </th>
+        </tr>
+
+        <tr>
+          <td>  <!--Td represents the table data and also forms the columns-->
+              1
+          </td>
+          <td style="border: 2px solid black;">
+            Mango
+          </td>
+          <td style="border: 2px solid black;">
+            20
+          </td>
+
+        </tr>
+
+        <tr>
+          <td>
+            2
+          </td>
+          <td>
+            Apple
+          </td>
+          <td>
+            50
+          </td>
+        </tr>
+
+
+    </table>
+<br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <!--HTML LIST (2 types)-->
+
+      <!--UNORDERED LIST-->
+
+      <h3 style="font-size: 24px; background-color: green;">Types of Cars</h3>
+    <ul id="car_ulcontainer" style="border: 2px dashed brown;">
+      <li>Volvo</li>
+      <li style="padding: 10px;">Mercedes Benz</li>
+      <li>Volkswagen</li>
+      <li style="padding: 10px;">Peugeot</li>
+      <li>Rolls Royce</li>
+    </ul>
+
+    
+    <!--ORDERED LIST-->
+        <h3>Beverages</h3>
+
+    <ol>
+      <li style="color: red;">Milo</li>
+      <li>Milk</li>
+      <li>Bournvita</li>
+      <li>Cardbury</li>
+    </ol>
+
+
+    <!--CSS  means Cascading Style Sheet-->
+    <!--Three Ways of Adding styles to your HTML-->
+    <!--
+    1) Inline styling using the style attribute, 
+    2) Styling with the style tag within the head tag, 
+    3) Using an external stylesheet
+    -->
+
+    <!--ASSIGNMENT 20/09/2024-->
+<!-- Use the HTML select tag to create a dropdown list of 20 tech fields and it should be submitted to a dummy backend. -->
+
+
+<!--JSON FORMAT - Javascript Object Notation-->
+
+<!-- {
+  "name": "John",
+  "birthday": "12/12/1990"
+} -->
+
+
+    <!--EMBEDDING MAPS-->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.24628739068!2d3.369292875052728!3d6.616293893377833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b937dfc1c3ba9%3A0x6b017c2a8c1288a!2sMAGODO!5e0!3m2!1sen!2sng!4v1726683837088!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </body>
+  <!--Closing Body Tag-->
+</html>
+<!--Closing html tag-->

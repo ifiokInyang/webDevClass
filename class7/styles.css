@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#transition_div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(8, 27, 8);
+    background-color: yellow;
+    /* Transition takes two values as a minimum, and max 4 values.
+        First value: transition-property;
+        2nd Value: transition-duration;
+        3rd Value: transition-timing-function
+        4th Value: transition-delay
+    */
+    /* transition: width 3s ease-in-out 2s; */
+
+    transition: height 4s, background-color 3s, transform 8s ease 2s;
+}
+
+#transition_div2{
+    display: none;
+}
+
+#transition_div:hover {
+    /* width: 500px; */
+    height: 400px;
+    background-color: blue;
+    cursor: pointer;
+    transform: translate(10px, 30px);
+    /* transform: rotate(90deg); */
+    /* transform: scaleY(3); */
+    /* transform: scale(3, 5); */
+}
+
+
+#input{
+    padding: 20px;
+}
+
+button{
+    padding: 20px;
+    font-size: 20px;
+    margin: 15px;
+    cursor: pointer;
+    transition: transform 3s;
+}
+
+button:hover{
+    transform: scale(1.5);
+    background-color: brown;
+}
+
+
+
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
+}

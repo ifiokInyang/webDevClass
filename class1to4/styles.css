@@ -1,0 +1,137 @@
+* {
+    /* background-color: gold; */
+    /* padding: 40px; */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-weight: 100;
+    font-size: 29px;
+    font-style: italic; */
+}
+
+body{
+    /*BACKGROUND IMAGE FROM AN EXTERNAL SOURCE*/
+    /* background-image: url("https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg"); */
+
+    /* background-image: url("./images/bg-image.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top right; 
+    /*If just one value, the second value will default to center*/
+    /*By default, background-position takes two values, the first for the x-axis (from left to right), while the second for the y-axis(top to bottom) */
+    /* background-color: rgb(79, 79, 110); */
+}
+
+#paragraph {
+    /* padding: 50px */
+    border: 2px solid grey;
+    /* padding-right: 20px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 8px; */
+
+    /* padding: 20px 10px;  */
+    /*Top and bottom padding*/
+    /* margin: 30px 10px; */
+
+    padding: 10px 20px 30px 40px; /*Top, Right, Bottom, left*/
+    margin: 40px 30px 20px 10px;
+}
+
+#paragraph_box{
+    width: 150px;
+    /* padding: 20px; */
+    height: 100px;
+    background-color: aquamarine;
+    overflow-y: auto;
+    /* overflow-x: scroll; */
+}
+
+#lorem_paragraph{
+    text-align: center;
+    text-transform: lowercase;
+    line-height: 2;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px red;
+}
+
+#address{
+    /* text-align: end; */
+    /* background-color: blue; */
+    /* background-color: rgb(255,45,244); */
+    /* background-color: rgba(255,45,244,0.2);  */
+    /*r,g, and b ranges from 0 to 255, while "a" ranges from 0 to 1*/
+    /* background-color: hsl(240, 100%, 100%);  */
+    /*h-represents hue (0 - 360), s represents saturation (0-100%), l represents lightness (0-100%)*/
+    background-color: #acc7b2;
+    width: 160px;
+    margin-left: 650px;
+}
+
+#address_paragraph{
+    padding-right: 65px;
+}
+
+/*Background*/
+
+/* "This is how my paragraph looks like: 'This is a quote'"  */
+
+#div_box{
+    width: 300px;
+    height: 300px;
+    background-color: #acc7b2;
+    /* border: 2px solid red; */
+    /* border-style: solid;
+    border-width: 5px;
+    border-color: blue; */
+    /* border-radius: 50%; */
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 100px;
+    /*
+    box-shadow: horizontal offset, vertical offset, blur radius, spread radius, color;
+    */
+
+    box-shadow: -10px -20px brown;
+}
+
+.web_image{
+    width: 50px;
+    height: 100px;
+    /* border-radius: 50%;  */
+    /*50% is equal to 25px because it's dimension is 50px*/
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+
+/*Dimensions*/
+
+/*
+Vw - Viewport width
+Vh - Viewport height
+% - percentage ==== Will be calculated based on the dimension of the element
+px - pixels  === fixed.
+======BROWSER'S DEFAULT FONT SIZE IS 16PX========
+em - em  ======em's measurement is relative to the dimension of the parent size ====
+rem - root em ====Is relative to the root =====
+*/
+
+
+#test{
+    font-size: 24px;
+}
+
+.test_paragraph{
+    font-size: 10em;
+}
+
+html{
+    font-size: 50px
+}
+
+.rem_paragraph{
+    font-size: 2rem;
+}
